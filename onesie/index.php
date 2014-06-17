@@ -32,7 +32,8 @@
 					<img class="site-title" src="<?php echo esc_url( $options['logo'] ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
 				</a>
 			<?php else : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+				
 			<?php endif; ?>
 
 			<h2 class="site-description">
@@ -45,15 +46,7 @@
 				<?php bloginfo( 'description' ); ?>
 			<?php endif; ?>
             </h2>
-            <?php if ( ! empty( $options['button_link'] ) ) : ?>
-				<a class="btn btn-big btn-translucent" href="<?php echo esc_url( $options['button_link'] ); ?>">
-				<?php if ( ! empty( $options['button_text'] ) ) : ?>
-					<?php echo esc_attr( $options['button_text'] ); ?>
-				<?php else : ?>
-					<?php _e( 'Learn More', 'onesie' ); ?>
-				<?php endif; ?>
-				</a>
-			<?php endif; ?>
+            
 		</div>
 
 		<?php if ( ! empty( $options['portfolio'] ) || ! empty( $options['about'] ) || ! empty( $options['contact'] ) ) : ?>
