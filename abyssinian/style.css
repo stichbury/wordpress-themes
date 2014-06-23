@@ -1,0 +1,87 @@
+/*
+ Theme Name:   Abyssinian
+ Theme URI:    
+ Description:  Abyssinian (a onesie-pro theme)
+ Author:       Jo Stichbury
+ Author URI:   http://siame.se
+ Template:     onesie-pro
+ Version:      1.0.0
+ Tags:         
+ Text Domain:  abyssinian
+*/
+
+@import url("../onesie-pro/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #ffffff;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+
+a:hover,
+a:focus,
+a:active {
+	color: #b5b2bd;
+	text-decoration: none;
+}
+
+
+
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
+	color:#b5b2bd;
+}
+
+.gallery li, .gallery article {
+	padding:0;
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 30%;
+	margin: 0 5% 5% 0;
+	background: #000000;
+}
+
+
+
+
+
+.gallery figcaption h3 {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #fff;
+}
+.gallery figcaption h3 a {
+	color:#fff;
+}
+.gallery figcaption h3 a:hover {
+	color:#b5b2bd;
+}
+
+
+
+
+
+
+.gallery figcaption a {
+	color:#ffffff;
+}
+.gallery figcaption a:hover {
+	color:#b5b2bd;
+}
+
+.gallery figcaption .genericon:hover {
+	color: #b5b2bd;
+}
+
