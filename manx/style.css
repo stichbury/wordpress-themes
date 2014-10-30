@@ -1,0 +1,520 @@
+/*
+ Theme Name:   Manx
+ Theme URI:    
+ Description:  Manx (a child theme)
+ Author:       Jo Stichbury
+ Author URI:   http://siame.se
+ Template:     govpress
+ Version:      1.0.0
+ Text Domain:  manx
+*/
+
+@import url("../govpress/style.css");
+
+/* =Child theme and layout customization starts here
+-------------------------------------------------------------- */
+
+/* Set Page Builder bottom margin */
+
+.panel-grid-cell {
+margin: 0px !important;
+padding: 0 !important; 
+}
+
+.site-content {
+	margin:0 !important;
+	padding: 1em 0em 0em 0em !important;
+	}
+
+
+
+/* =Responsive
+----------------------------------------------- */
+/** WIDE */
+
+@media screen and (min-width: 1200px) {
+/* =Site content layout */
+	
+	.col-width {
+	  padding: 0 0;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+.main-navigation .current_page_item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current-menu-ancestor > a {
+  background: #ffffff;
+}
+
+.main-navigation ul > li.menu-item-has-children:hover > a,
+.main-navigation ul > li.menu-item-has-children.focus > a,
+.main-navigation ul > li.page_item_has_children:hover > a,
+.main-navigation ul > li.page_item_has_children.focus > a {
+  background: #ffffff;
+}
+
+.main-navigation ul ul {
+  background-color: #ffffff;
+}
+}
+
+
+/** From 840  to 1100 - drop down menu settings*/
+@media screen and (min-width: 840px) and (max-width: 1100px){
+    .main-navigation a {
+        padding: 0em 0em !important;
+      }
+	  
+		 
+ .main-navigation.toggled-on {
+      padding: 42px 0 0 0;
+      margin-right: 20px;
+	  background-color: #d9e3ff !important;
+    } 
+		 .site-content {
+		 	margin:0 !important;
+		 	padding: 0em 0em 0em 0em !important;
+		 	}	 
+}
+
+/** From 840 upwards */
+@media screen and (min-width: 840px) {
+
+	
+
+	.site-header div {
+		height:90px;
+	}
+	
+.home .site-header .header-cust {/** Blue home header - full screen */
+		background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/10/ICC-home-header-v2.jpg") no-repeat scroll 0 0 transparent;
+		background-origin: content-box;
+		background-size: 100% auto !important;
+	}
+	
+.site-header .header-cust {/** Grey header - all pages except home */
+		background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/10/ICC-grey-header-v2.jpg") no-repeat scroll 0 0 transparent;
+		background-origin: content-box;
+		background-size: 100% auto !important;
+
+	}	
+	
+   
+}
+/** UP TO 840 */
+@media screen and (max-width: 840px) {
+.hide-on-mobile { /** Hide square menu graphics on child page widget columns */
+	display:none;
+	}
+	 
+
+.home .site-header .header-cust { /** Blue home header for narrow screens */
+		background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/10/ICC-2-line-header.jpg") no-repeat scroll 0 0 transparent;
+		background-origin: content-box;
+		background-size: 100% auto !important;
+		height: 140px;
+		
+	}
+
+.site-header .header-cust { /** Grey header for all pages except home, for narrow screens */
+		background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/10/ICC-2-line-grey-header.jpg") no-repeat scroll 0 0 transparent;
+		background-origin: content-box;
+		background-size: 100% auto !important;
+		height:140px;
+		
+	}
+	
+ .main-navigation.toggled-on {
+      padding: 42px 0 0 0;
+      margin-right: 20px;
+	  background-color: #d9e3ff !important;
+    }
+
+  .main-navigation a {
+      padding: 0em 0em !important;
+    }
+}
+
+/** Progressive  narrowing of header graphic height to avoid large spacing between it and hamburger menu */
+@media screen and (max-width: 760px) and (min-width: 620px){
+	.home .site-header .header-cust { /** Blue home header for narrow screens */
+		height: 140px;
+		}
+
+	.site-header .header-cust { /** Grey header for all pages except home, for narrow screens */
+		height: 140px;
+		}
+}
+
+@media screen and (max-width: 620px) and (min-width: 480px){
+	.home .site-header .header-cust { /** Blue home header for narrow screens */
+		height: 115px;
+		}
+
+	.site-header .header-cust { /** Grey header for all pages except home, for narrow screens */
+		height: 115px;
+		}
+}
+
+/** NARROW */
+@media screen and (max-width: 480px) {
+	
+/* =Site content layout */
+.site-content {
+	margin:0 !important;
+	padding: 0.5em 0em 0em 0.5em !important;
+	}
+	
+.main-navigation a {
+  padding: 0em 0em 0em 0.5em !important;
+  }
+  
+  .main-navigation.toggled-on {
+       padding: 42px 0 10px;
+	   background-color: #d9e3ff !important;
+     }
+	
+	.home .site-header .header-cust { /** Blue home header for narrow screens */
+			background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/10/ICC-2-line-header.jpg") no-repeat scroll 0 0 transparent;
+			background-origin: content-box;
+			background-size: 100% auto !important;
+			height: 80px;
+		}
+
+	.site-header .header-cust { /** Grey header for all pages except home, for narrow screens */
+			background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/10/ICC-2-line-grey-header.jpg") no-repeat scroll 0 0 transparent;
+			background-origin: content-box;
+			background-size: 100% auto !important;
+			height:80px;
+		}
+	}
+	
+	
+/* =Header
+----------------------------------------------- */
+.site-header {
+  font-weight: 400;
+  padding: 1.2em 0 0.2em;
+  text-align: center;
+}
+
+
+
+body,
+button,
+input,
+select,
+textarea {
+  color: #595959;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding-right: 45px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #595959;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight:normal;
+}
+
+h1, h3 {
+	text-transform:uppercase;
+}
+
+h1 {
+	color:black;
+}
+
+h3 {
+	color: #595959;
+}
+
+h4 {
+	 color: #2f489a;
+}
+
+/* Links */
+a {
+  color: #2f489a;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #99b3ff !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+
+/* =Menu
+----------------------------------------------- */
+
+/*
+.main-navigation li.current-page-item a,
+.main-navigation li.current-page-ancestor a,
+.main-navigation li.current-page-parent a, 
+.main-navigation li.current_page_item a,
+.main-navigation li.current_page_ancestor a,
+.main-navigation li.current-menu-item a,
+.main-navigation li.current-menu-ancestor a,
+.menu li.current-menu-item a,
+.menu li.page_item a, 
+.menu li.current_page_item a
+{
+	font-weight: bold !important;
+	color: #2f489a !important;
+	
+}
+*/
+
+
+.main-navigation li.current-page-item a,
+.main-navigation li.current-page-ancestor a,
+.main-navigation li.current-page-parent a, 
+.main-navigation li.current_page_item a,
+.main-navigation li.current_page_ancestor a,
+.main-navigation li.current-menu-item a,
+.main-navigation li.current-menu-ancestor a,
+.menu li.current-menu-item a,
+.menu li.page_item a, 
+.menu li.current_page_item a
+{
+	font-weight: bold !important;
+	color: #2f489a !important;
+	
+}
+
+.main-navigation li.current-page-item .sub-menu a,
+.main-navigation li.current-page-ancestor .sub-menu a,
+.main-navigation li.current-page-parent .sub-menu a, 
+.main-navigation li.current_page_item .sub-menu a,
+.main-navigation li.current_page_ancestor .sub-menu a,
+.main-navigation li.current-menu-item .sub-menu a,
+.main-navigation li.current-menu-ancestor .sub-menu a,
+.menu li.current-menu-item .sub-menu a,
+.menu li.page_item .sub-menu a, 
+.menu li.current_page_item .sub-menu a
+{
+	font-weight: normal !important;
+	
+}
+
+.main-navigation a {
+  color: #000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size: 19px;
+  font-weight:normal;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.main-navigation a:hover {
+  color: #99b3ff;
+}
+
+/* padding around menu links */
+.main-navigation a {
+  padding: 0.3em 0.70em 0.3em 0em;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 0;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  text-align: right;
+}
+
+.menu-toggle:before {
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font: normal 28px/1 FontAwesome;
+  text-decoration: inherit;
+  vertical-align: text-bottom;
+  color: #595959;
+  content: "\f0c9";
+  margin-right: 0.35em;
+}
+
+/* =Widgets
+----------------------------------------------- */
+.widget p {
+  font-size: 16px !important;
+  margin: 0 0 1em !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 0.4em !important;
+}
+
+.widget-title-first {
+	margin-bottom:0.4em !important;
+	font-weight:normal !important;
+	font-size: 20px !important;
+	letter-spacing: 0.5px !important;
+}
+
+.widget-title {
+	margin-top: 1em !important;
+	margin-bottom:0.4em !important;
+	font-weight:normal !important;
+	font-size: 20px !important;
+	letter-spacing: 0.5px !important;
+	
+}
+
+.textwidget h1, .textwidget h2, .textwidget h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight:normal;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  text-transform:uppercase;
+
+}
+
+.textwidget h1 {
+  	color: #000000;
+}
+
+.textwidget h2 {
+	margin-bottom: 3px !important;
+}
+
+.textwidget h2, .textwidget h3 {
+  	color: #595959;
+}
+
+.breadcrumblink h2 a {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  	font-weight:normal !important;
+  	font-size: 20px;
+  	letter-spacing: 0.5px;
+  	text-transform:uppercase;
+	color: #595959 !important;
+	margin-bottom: 3px !important;
+}
+
+.widget_nav_menu {
+	padding: 1em 1em 2em;
+	background-color: #d9e3ff !important;
+}
+
+.contact-button a {
+	font-weight:normal;
+	color: #213a8f;	
+	font-size: 20px !important;
+}
+
+/** Contact us button */
+.contact-button p {
+text-decoration: none; 
+color: #000000; 
+font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-size: 20px !important; 
+font-weight: normal; 
+letter-spacing: 0.5px; 
+text-align: left;
+background-color: #e5e4df; 
+background: #e5e4df; 
+box-sizing: border-box; 
+border-radius: 40px; 
+-moz-border-radius: 40px; 
+-webkit-border-radius: 40px; 
+position: relative; 
+padding: 25px 25px 25px 25px;
+max-width: 290px; 
+
+}
+
+
+/** Alignment of links in widget menu on About page */
+.menu-about-menu-container ul, .menu-about-psychotherapy-menu-container ul {
+	margin: 0 !important;
+}
+
+.menu-about-menu-container li, .menu-about-psychotherapy-menu-container li
+{margin: 0.8em 0;}
+
+.menu-about-menu-container a, .menu-about-psychotherapy-menu-container a {
+font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-weight:normal;
+font-size: 20px;
+line-height: 1.2em;
+letter-spacing: 0.5px;
+text-decoration: none;
+color: #2f489a;
+}
+
+.sub-menu a {
+	font-size: 18px;
+} 
+
+ul.sub-menu li {
+  list-style: disc;
+  color: #2f489a;
+  margin-left: 1em; 
+  margin-top: 0em;
+}
+
+
+
+/* =Footer
+----------------------------------------------- */
+.site-footer {
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  background: #ffffff;
+  color: #595959;
+  padding: 0 0 1em 0;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #595959;
+  font-weight:normal;
+}
+
+.site-footer.widgets {
+  padding: 1.5em 0 .5em;
+}
+
+
+/* Footer Widgets */
+#footer-widgets {
+  margin-bottom: 1.5em;
+}
+
+#footer-widgets.widgets-count-3 .widget-area {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+}
+.widget_search
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+​
+#footer-widget-2 .widget-area
+{
+    padding: 0 !important;
+    margin: 0 !important;	
+}
+
+#footer-widgets.widgets-count-3 #footer-widget-2 {
+  margin-right: 0; 
+
+}
+
