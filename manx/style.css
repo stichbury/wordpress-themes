@@ -81,9 +81,6 @@ padding: 0 !important;
 
 /** From 840 upwards */
 @media screen and (min-width: 840px) {
-
-	
-
 	.site-header div {
 		height:90px;
 	}
@@ -111,7 +108,7 @@ padding: 0 !important;
 	 
 
 .home .site-header .header-cust { /** Blue home header for narrow screens */
-		background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/10/ICC-2-line-header.jpg") no-repeat scroll 0 0 transparent;
+		background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/11/ICC-Logotype-2lines-blue-NEW.jpg") no-repeat scroll 0 0 transparent;
 		background-origin: content-box;
 		background-size: 100% auto !important;
 		height: 140px;
@@ -119,7 +116,7 @@ padding: 0 !important;
 	}
 
 .site-header .header-cust { /** Grey header for all pages except home, for narrow screens */
-		background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/10/ICC-2-line-grey-header.jpg") no-repeat scroll 0 0 transparent;
+		background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/11/ICC-Logotype-2lines-grey-NEW.jpg") no-repeat scroll 0 0 transparent;
 		background-origin: content-box;
 		background-size: 100% auto !important;
 		height:140px;
@@ -128,7 +125,6 @@ padding: 0 !important;
 	
  .main-navigation.toggled-on {
       padding: 42px 0 0 0;
-      margin-right: 20px;
 	  background-color: #d9e3ff !important;
     }
 
@@ -138,17 +134,7 @@ padding: 0 !important;
 }
 
 /** Progressive  narrowing of header graphic height to avoid large spacing between it and hamburger menu */
-@media screen and (max-width: 760px) and (min-width: 620px){
-	.home .site-header .header-cust { /** Blue home header for narrow screens */
-		height: 140px;
-		}
-
-	.site-header .header-cust { /** Grey header for all pages except home, for narrow screens */
-		height: 140px;
-		}
-}
-
-@media screen and (max-width: 620px) and (min-width: 480px){
+@media screen and (max-width: 760px) and (min-width: 501px){
 	.home .site-header .header-cust { /** Blue home header for narrow screens */
 		height: 115px;
 		}
@@ -159,16 +145,16 @@ padding: 0 !important;
 }
 
 /** NARROW */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
 	
 /* =Site content layout */
 .site-content {
 	margin:0 !important;
-	padding: 0.5em 0em 0em 0.5em !important;
+	padding: 0.5em 0em 0em 1em !important;
 	}
 	
 .main-navigation a {
-  padding: 0em 0em 0em 0.5em !important;
+  padding: 0em 0em 0em 1em !important;
   }
   
   .main-navigation.toggled-on {
@@ -177,20 +163,33 @@ padding: 0 !important;
      }
 	
 	.home .site-header .header-cust { /** Blue home header for narrow screens */
-			background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/10/ICC-2-line-header.jpg") no-repeat scroll 0 0 transparent;
-			background-origin: content-box;
-			background-size: 100% auto !important;
-			height: 80px;
+			background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/11/ICC-Logotype-2lines-blue-NEW2.jpg") no-repeat scroll 0 0 transparent;
+			background-size:  100% auto !important;
+			margin-left: 1em;
+			height: 100px;
 		}
 
 	.site-header .header-cust { /** Grey header for all pages except home, for narrow screens */
-			background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/10/ICC-2-line-grey-header.jpg") no-repeat scroll 0 0 transparent;
-			background-origin: content-box;
+			background: url("http://s7974.p20.sites.pressdns.com/wp-content/uploads/2014/11/ICC-Logotype-2lines-grey-NEW2.jpg") no-repeat scroll 0 0 transparent;
 			background-size: 100% auto !important;
-			height:80px;
+			margin-left: 1em;
+			height:100px;
 		}
 	}
 	
+		
+	/** Mobile view - up to 399px */
+@media screen and (max-width: 380px) {
+	.home .site-header .header-cust { /** Blue home header for narrow screens */
+		height: 70px;
+		}
+
+	.site-header .header-cust { /** Grey header for all pages except home, for narrow screens */
+		height: 70px;
+		}
+	
+	}
+
 	
 /* =Header
 ----------------------------------------------- */
@@ -199,8 +198,6 @@ padding: 0 !important;
   padding: 1.2em 0 0.2em;
   text-align: center;
 }
-
-
 
 body,
 button,
@@ -259,25 +256,6 @@ a:hover {
 /* =Menu
 ----------------------------------------------- */
 
-/*
-.main-navigation li.current-page-item a,
-.main-navigation li.current-page-ancestor a,
-.main-navigation li.current-page-parent a, 
-.main-navigation li.current_page_item a,
-.main-navigation li.current_page_ancestor a,
-.main-navigation li.current-menu-item a,
-.main-navigation li.current-menu-ancestor a,
-.menu li.current-menu-item a,
-.menu li.page_item a, 
-.menu li.current_page_item a
-{
-	font-weight: bold !important;
-	color: #2f489a !important;
-	
-}
-*/
-
-
 .main-navigation li.current-page-item a,
 .main-navigation li.current-page-ancestor a,
 .main-navigation li.current-page-parent a, 
@@ -330,24 +308,17 @@ a:hover {
 }
 
 .menu-toggle {
-  cursor: pointer;
-  font-size: 0;
-  margin: 0;
-  overflow: hidden;
-  position: absolute;
-  text-align: right;
+  top: 16px;
+  left: 16px;
+  text-align: left;
 }
 
+
 .menu-toggle:before {
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font: normal 28px/1 FontAwesome;
-  text-decoration: inherit;
-  vertical-align: text-bottom;
   color: #595959;
-  content: "\f0c9";
-  margin-right: 0.35em;
+  font: normal 24px/1 FontAwesome;
 }
+
 
 /* =Widgets
 ----------------------------------------------- */
@@ -478,7 +449,7 @@ ul.sub-menu li {
   background: #ffffff;
   color: #595959;
   padding: 0 0 1em 0;
-  text-align: center;
+  text-align: left;
 }
 
 .site-footer a {
@@ -486,12 +457,13 @@ ul.sub-menu li {
   font-weight:normal;
 }
 
+/*
 .site-footer.widgets {
   padding: 1.5em 0 .5em;
 }
 
 
-/* Footer Widgets */
+
 #footer-widgets {
   margin-bottom: 1.5em;
 }
@@ -503,7 +475,7 @@ ul.sub-menu li {
 }
 .widget_search
 {
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-bottom: 10px;
 }
 ​
@@ -517,4 +489,4 @@ ul.sub-menu li {
   margin-right: 0; 
 
 }
-
+*/
