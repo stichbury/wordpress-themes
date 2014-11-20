@@ -28,6 +28,7 @@ padding: 0 !important;
 
 
 
+
 /* =Responsive
 ----------------------------------------------- */
 /** WIDE */
@@ -346,6 +347,28 @@ a:hover {
 	
 }
 
+.widget-title a {
+  	text-transform:none;
+}
+
+#secondary .widget-title, #home-page-featured .widget-title {
+  color: #595959;
+  background: #fffff;
+  padding: 0 0;
+  margin-bottom: 0;
+}
+
+/* Sidebar Widgets & Home Page Featured Widgets */
+#secondary .widget, #home-page-featured .widget {
+  background: #fff;
+  border-radius: 0;
+}
+
+#secondary .widget-title, #home-page-featured .widget-title {
+  background: #fff;
+}
+
+
 .textwidget h1, .textwidget h2, .textwidget h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-weight:normal;
@@ -367,6 +390,19 @@ a:hover {
   	color: #595959;
 }
 
+.entry-content {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+
+.entry-title {
+  font-size: 20px;
+  padding: 0 0;
+  margin: 0 0;
+  border-bottom: none;
+}
+
 .breadcrumblink h2 a {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   	font-weight:normal !important;
@@ -382,13 +418,36 @@ a:hover {
 	background-color: #d9e3ff !important;
 }
 
+.widget ul {
+	margin-left: 0 !important;
+}
+
+#archives-2 {
+margin-bottom: 0 !important;
+padding: 0 0 !important;
+}
+
+
+
+.widget li a {
+font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-weight:normal;
+font-size: 20px;
+line-height: 1.2em;
+letter-spacing: 0.5px;
+text-decoration: none;
+color: #2f489a;
+}
+
+
+/** Contact us button used on multiple pages*/
+
 .contact-button a {
 	font-weight:normal;
 	color: #213a8f;	
 	font-size: 20px !important;
 }
 
-/** Contact us button */
 .contact-button p {
 text-decoration: none; 
 color: #000000; 
@@ -409,16 +468,46 @@ max-width: 290px;
 
 }
 
+/** Contact page button */
+
+.contact-page-button a {
+	font-weight:normal;
+	color: #213a8f;	
+	font-size: 20px !important;
+}
+
+
+
+.contact-page-button p {
+text-decoration: none; 
+color: #000000; 
+font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-size: 20px !important; 
+font-weight: normal; 
+letter-spacing: 0.5px; 
+text-align: left;
+background-color: #d9e3ff; 
+background: #d9e3ff; 
+box-sizing: border-box; 
+border-radius: 40px; 
+-moz-border-radius: 40px; 
+-webkit-border-radius: 40px; 
+position: relative; 
+padding: 25px 25px 25px 25px;
+
+
+}
+
 
 /** Alignment of links in widget menu on About page */
-.menu-about-menu-container ul, .menu-about-psychotherapy-menu-container ul {
+.menu-about-menu-container ul, .menu-about-psychotherapy-menu-container ul, .menu-links-menu-container ul {
 	margin: 0 !important;
 }
 
-.menu-about-menu-container li, .menu-about-psychotherapy-menu-container li
+.menu-about-menu-container li, .menu-about-psychotherapy-menu-container li, .menu-links-menu-container li
 {margin: 0.8em 0;}
 
-.menu-about-menu-container a, .menu-about-psychotherapy-menu-container a {
+.menu-about-menu-container a, .menu-about-psychotherapy-menu-container a, .menu-links-menu-container a {
 font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 font-weight:normal;
 font-size: 20px;
