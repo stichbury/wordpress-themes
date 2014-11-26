@@ -321,6 +321,28 @@ a:hover {
 }
 
 
+/* Captions */
+
+
+.wp-caption {
+	border: none;
+	-khtml-border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	margin: 0 1em 1em 0;
+}
+
+.wp-caption img {
+	margin: 0 0 !important;
+}
+.wp-caption p.wp-caption-text {
+	margin: 0 0 4px;
+	font-size: 13px !important;
+	text-align: left;
+}
+
+
 /* =Widgets
 ----------------------------------------------- */
 .widget p {
@@ -340,7 +362,7 @@ a:hover {
 
 .widget-title {
 	margin-top: 1em !important;
-	margin-bottom:0.4em !important;
+	margin-bottom:0.3em !important;
 	font-weight:normal !important;
 	font-size: 20px !important;
 	letter-spacing: 0.5px !important;
@@ -349,7 +371,10 @@ a:hover {
 
 .widget-title a {
   	text-transform:none;
+  	font-size: 16px;
+  	font-family: Georgia, Times, "Times New Roman", serif;
 }
+
 
 #secondary .widget-title, #home-page-featured .widget-title {
   color: #595959;
@@ -427,7 +452,9 @@ margin-bottom: 0 !important;
 padding: 0 0 !important;
 }
 
-
+a.more-link {
+font-weight: normal !important;
+}
 
 .widget li a {
 font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
@@ -499,15 +526,25 @@ padding: 25px 25px 25px 25px;
 }
 
 
+
 /** Alignment of links in widget menu on About page */
-.menu-about-menu-container ul, .menu-about-psychotherapy-menu-container ul, .menu-links-menu-container ul {
+.menu-about-menu-container ul, 
+.menu-about-psychotherapy-menu-container ul, 
+.menu-links-menu-container ul, 
+.menu-supporting-menu-container ul {
 	margin: 0 !important;
 }
 
-.menu-about-menu-container li, .menu-about-psychotherapy-menu-container li, .menu-links-menu-container li
+.menu-about-menu-container li, 
+.menu-about-psychotherapy-menu-container li, 
+.menu-links-menu-container li, 
+.menu-supporting-menu-container li
 {margin: 0.8em 0;}
 
-.menu-about-menu-container a, .menu-about-psychotherapy-menu-container a, .menu-links-menu-container a {
+.menu-about-menu-container a, 
+.menu-about-psychotherapy-menu-container a, 
+.menu-links-menu-container a,
+.menu-supporting-menu-container a {
 font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 font-weight:normal;
 font-size: 20px;
