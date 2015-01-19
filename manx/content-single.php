@@ -30,7 +30,7 @@
 					echo '<li class="category-link"><a href="' . get_category_link( $cat->cat_ID ) . '">' . $cat->name . '</a></li>';
 				}
 			?>
-			<?php echo get_the_tag_list('<li class="tag-link">','</li><li>','</li>'); ?>
+
 			
 		</ul>
 	</footer><!-- .entry-meta -->

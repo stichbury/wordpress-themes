@@ -215,7 +215,7 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: #595959;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-weight:normal;
 }
 
@@ -290,7 +290,7 @@ a:hover {
 
 .main-navigation a {
   color: #000;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-size: 19px;
   font-weight:normal;
   letter-spacing: 0.2px;
@@ -395,7 +395,7 @@ a:hover {
 
 
 .textwidget h1, .textwidget h2, .textwidget h3 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-weight:normal;
   font-size: 20px;
   letter-spacing: 0.5px;
@@ -429,7 +429,7 @@ a:hover {
 }
 
 .breadcrumblink h2 a {
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-family: 'Cabin', sans-serif;
   	font-weight:normal !important;
   	font-size: 20px;
   	letter-spacing: 0.5px;
@@ -437,6 +437,7 @@ a:hover {
 	color: #595959 !important;
 	margin-bottom: 3px !important;
 }
+
 
 .widget_nav_menu {
 	padding: 1em 1em 2em;
@@ -457,7 +458,7 @@ font-weight: normal !important;
 }
 
 .widget li a {
-font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-family: 'Cabin', sans-serif;
 font-weight:normal;
 font-size: 20px;
 line-height: 1.2em;
@@ -478,7 +479,7 @@ color: #2f489a;
 .contact-button p {
 text-decoration: none; 
 color: #000000; 
-font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-family: 'Cabin', sans-serif;
 font-size: 20px !important; 
 font-weight: normal; 
 letter-spacing: 0.5px; 
@@ -508,7 +509,7 @@ max-width: 290px;
 .contact-page-button p {
 text-decoration: none; 
 color: #000000; 
-font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-family: 'Cabin', sans-serif;
 font-size: 20px !important; 
 font-weight: normal; 
 letter-spacing: 0.5px; 
@@ -530,22 +531,27 @@ padding: 25px 25px 25px 25px;
 /** Alignment of links in widget menu on About page */
 .menu-about-menu-container ul, 
 .menu-about-psychotherapy-menu-container ul, 
-.menu-links-menu-container ul, 
-.menu-supporting-menu-container ul {
+.menu-links-menu-container ul,
+.menu-supporting-menu-container ul,
+.menu-members-menu-container ul {
 	margin: 0 !important;
 }
 
 .menu-about-menu-container li, 
 .menu-about-psychotherapy-menu-container li, 
 .menu-links-menu-container li, 
-.menu-supporting-menu-container li
+.menu-news-menu-container li,
+.menu-supporting-menu-container li,
+.menu-members-menu-container li
 {margin: 0.8em 0;}
 
 .menu-about-menu-container a, 
 .menu-about-psychotherapy-menu-container a, 
 .menu-links-menu-container a,
-.menu-supporting-menu-container a {
-font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+.menu-news-menu-container a,
+.menu-supporting-menu-container a,
+.menu-members-menu-container a {
+font-family: 'Cabin', sans-serif;
 font-weight:normal;
 font-size: 20px;
 line-height: 1.2em;
@@ -565,13 +571,50 @@ ul.sub-menu li {
   margin-top: 0em;
 }
 
+.menu-news-menu-container ul {
+margin: 1em 1em !important;
+}
 
 
+/* Password box */
+#pwbox-122 {
+max-width: 300px;
+border: 1px;
+border-color: #595959;
+background-color: #fff;
+border-style: solid;
+-webkit-font-smoothing: auto;
+}
+
+/* Password box */
+#pwbox-122 {
+max-width: 300px;
+border: 1px;
+border-color: #595959;
+background-color: #fff;
+border-style: solid;
+-webkit-font-smoothing: auto;
+}
+
+/* Search results styling */
+.search .entry-title {
+  font-size: 20px;
+}
+
+.search #main .search-form,
+.error404 #main .search-form {
+  padding: 0;
+}
+
+.search #main .search-form .search-field,
+.error404 #main .search-form .search-field {
+  background: #fff;
+}
 /* =Footer
 ----------------------------------------------- */
 .site-footer {
   font-size: 12px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-family: 'Cabin', sans-serif;
   background: #ffffff;
   color: #595959;
   padding: 0 0 1em 0;

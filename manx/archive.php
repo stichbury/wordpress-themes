@@ -18,7 +18,10 @@ get_header(); ?>
 				<h1 class="entry-title">
 					<?php
 						
-						if ( is_author() ) :
+						if ( is_category() ) :
+							single_cat_title();
+						
+						elseif ( is_author() ) :
 							printf( __( 'Author: %s', 'govpress' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
 						elseif ( is_day() ) :

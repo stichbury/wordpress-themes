@@ -30,7 +30,7 @@
 		<ul class="entry-meta-taxonomy">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php echo get_the_category_list('<li>','</li><li>','</li>'); ?>
-			<?php echo get_the_tag_list('<li>','</li><li>','</li>'); ?>
+			
 		<?php endif; // End if 'post' == get_post_type() ?>
 
 			<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
